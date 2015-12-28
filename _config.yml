@@ -4,8 +4,8 @@
 
 # Site
 title: 單色檸檬子非日常
-subtitle:
-description: MIS 廢宅日常，嘴炮問政
+subtitle: MIS 廢宅碎念，嘴炮問政
+description: 檸檬嘴炮靶場，完全主觀，完全負責
 author: Monoremonton
 language: zh-HK
 timezone: 
@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://rmntn.net/plog
 root: /plog/
-permalink: archives/:title/
+permalink: archives/show/:title/
 permalink_defaults:
 
 # Directory
@@ -35,7 +35,7 @@ external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: true
+relative_link: false
 future: true
 highlight:
   enable: true
