@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 單色檸檬子非日常
 subtitle:
-description:
-author: John Doe
-language:
-timezone:
+description: 自宅警備隊廢人 MIS 的日常，外加嘴炮問政
+author: Monoremonton
+language: zh-HK
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
-permalink: :year/:month/:day/:title/
+url: http://rmntn.net
+root: /plog
+permalink: archives/:title/
 permalink_defaults:
 
 # Directory
@@ -28,14 +28,14 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year:month:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: false
+relative_link: true
 future: true
 highlight:
   enable: true
@@ -46,14 +46,21 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  後日聊: daily-life
+  敗家成性: money-burning
+  玩物喪志: gaming
+  廚政治: polikitchens
+  無病呻吟: rants
+  糕科技: shitech
+  網站近況: sitelog
 tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+date_format: Do MMM YYYY
+time_format: A h:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -63,7 +70,34 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: yelee
+
+plugins:
+  - hexo-generator-feed
+  - hexo-filter-auto-spacing
+  - hexo-filter-fenced-code
+  - hexo-filter-fix-cjk-spacing
+  - hexo-generator-feed
+
+markdown:
+  render:
+    html: true
+    xhtmlOut: true
+    breaks: false
+  anchors:
+    level: 4
+    collisionSuffix: 'd'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+
+feed:
+  type: rss2
+  path: rss.xml
+  limit: 20
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
