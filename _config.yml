@@ -5,15 +5,15 @@
 # Site
 title: 單色檸檬子非日常
 subtitle:
-description: 自宅警備隊廢人 MIS 的日常，外加嘴炮問政
+description: MIS 廢宅日常，嘴炮問政
 author: Monoremonton
 language: zh-HK
 timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://rmntn.net
-root: /plog
+url: http://rmntn.net/plog
+root: /plog/
 permalink: archives/:title/
 permalink_defaults:
 
@@ -70,7 +70,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: yelee
+theme: maupassant
 
 plugins:
   - hexo-generator-feed
