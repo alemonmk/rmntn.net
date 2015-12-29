@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 檸檬嘴炮靶場
+title: 檸檬子隨筆
 subtitle: 完全主觀，完全負責
 description: 廢宅碎念，嘴炮問政
 author: Monoremonton
@@ -87,7 +87,6 @@ archive_generator:
 theme: maupassant
 
 plugins:
-  - hexo-generator-feed
   - hexo-filter-auto-spacing
   - hexo-filter-fenced-code
   - hexo-filter-fix-cjk-spacing
@@ -96,7 +95,7 @@ plugins:
 markdown:
   render:
     html: true
-    xhtmlOut: true
+    xhtmlOut: false
     breaks: false
   anchors:
     level: 4
