@@ -87,7 +87,7 @@ archive_generator:
 theme: maupassant
 
 plugins:
-  - hexo-filter-auto-spacing
+#  - hexo-filter-auto-spacing
   - hexo-filter-fenced-code
   - hexo-filter-fix-cjk-spacing
   - hexo-generator-feed
