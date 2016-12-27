@@ -1,7 +1,6 @@
 ---
 title: 中國資安？What a joke.
 date: 2014-12-28 03:21:30
-tags:
 categories: 糕科技
 excerpt: 一條民間「小兒科」暴露了在中国安全感千金難尋。
 permalink: 13
