@@ -72,8 +72,8 @@ index_generator:
 category_generator:
   per_page: 10
 
-tag_generator:
-  per_page: 10
+#tag_generator:
+#  per_page: 10
 
 archive_generator:
   per_page: 15
@@ -85,12 +85,6 @@ archive_generator:
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: maupassant
-
-plugins:
-#  - hexo-filter-auto-spacing
-  - hexo-filter-fenced-code
-  - hexo-filter-fix-cjk-spacing
-  - hexo-generator-feed
 
 markdown:
   render:
@@ -114,5 +108,5 @@ feed:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type:
+#deploy:
+#  type:
